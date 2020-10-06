@@ -19,9 +19,9 @@ def consolidate_cart(cart)
   cart.map do |i|
     i.store(:count, 1)
   end
-  binding.pry
-  # cart.each do |i|
-    if i.count
+  # binding.pry
+  cart.each do |i|
+    if i.compare_by_identity?
       i[:count] += 1 
     end
   end
