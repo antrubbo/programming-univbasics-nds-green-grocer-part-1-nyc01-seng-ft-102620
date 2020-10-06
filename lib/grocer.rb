@@ -20,11 +20,11 @@ def consolidate_cart(cart)
     i.store(:count, 1)
   end
   # binding.pry
-  cart.each do |i|
-    if i[:item]
-      i[:count] += 1 
-    end
-  end
+  # cart.each do |i|
+  #   if i[:item]
+  #     i[:count] += 1 
+  #   end
+  # end
   cart
 end
 
