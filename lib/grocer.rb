@@ -21,10 +21,10 @@ def consolidate_cart(cart)
   end
   binding.pry
   # cart.each do |i|
-  #   if i[:item]
-  #     i[:count] += 1 
-  #   end
-  # end
+    if i[:item]
+      i[:count] += 1 
+    end
+  end
   cart
 end
 
