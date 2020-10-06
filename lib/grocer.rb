@@ -18,8 +18,9 @@ def consolidate_cart(cart)
   
   cart.map do |i|
     i.store(:count, 1)
-    if i[]
   end
+  
+  if cart[0].eql?
   binding.pry
   
   # cart.each do |i|
