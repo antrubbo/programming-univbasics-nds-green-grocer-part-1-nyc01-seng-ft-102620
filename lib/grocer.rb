@@ -18,6 +18,7 @@ def consolidate_cart(cart)
   
   cart.map do |i|
     i.store(:count, 1)
+    if i
   end
   
   # cart.each do |i|
