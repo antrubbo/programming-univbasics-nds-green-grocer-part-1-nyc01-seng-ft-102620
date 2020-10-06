@@ -16,14 +16,15 @@ def consolidate_cart(cart)
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   
-  cart.map do |i|
-    i.store(:count, 1)
+  new_cart = []
+  cart.each do |i|
+    new_cart << i.store(:count, 1)
   end
   
-  cart.each do |i|
-  if i.eql?(cart[1])
-    cart.uniq
-  binding.pry
+  # cart.each do |i|
+  # if i.eql?(cart[1])
+  #   cart.uniq
+  # binding.pry
   
   # cart.each do |i|
   #   if i[:item]
