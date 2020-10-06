@@ -24,7 +24,7 @@ def consolidate_cart(cart)
   # cart.each do |i|
   # if i.eql?(cart[1])
   #   cart.uniq
-  # binding.pry
+  binding.pry
   
   # cart.each do |i|
   #   if i[:item]
