@@ -20,7 +20,9 @@ def consolidate_cart(cart)
     i.store(:count, 1)
   end
   
-  if cart[0].eql?
+  cart.each do |i|
+  if i.eql?(cart[1])
+    cart.uniq
   binding.pry
   
   # cart.each do |i|
