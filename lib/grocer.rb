@@ -19,7 +19,7 @@ def consolidate_cart(cart)
   cart.map do |i|
     i.store(:count, 1)
   end
-  # binding.pry
+  binding.pry
   # cart.each do |i|
   #   if i[:item]
   #     i[:count] += 1 
