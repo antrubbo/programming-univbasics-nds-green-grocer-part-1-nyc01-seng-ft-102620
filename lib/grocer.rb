@@ -31,7 +31,7 @@ def consolidate_cart(cart)
   #     i[:count] += 1 
   #   end
   # end
-  cart
+  new_cart
 end
 
 
